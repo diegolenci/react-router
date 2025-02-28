@@ -4,7 +4,7 @@ export default function MainNav() {
     return (
         <nav>
             <Link to="/">Home Page</Link>
-            <NavLink to="/lista">Lista post</NavLink>
+            <NavLink to="/chiSiamo">ChiSiamo?</NavLink>
         </nav>
     )
 }

@@ -1,6 +1,11 @@
+import MainNav from "../components/MainNav"
+
 const ContactPage = () => {
     return(
-        <h1>Chi siamo</h1>
+        <>
+            <MainNav/>
+            <h1>Chi siamo</h1>
+        </>
     )
 }
 
