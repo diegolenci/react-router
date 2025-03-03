@@ -4,13 +4,13 @@ import axios from "axios"
 import { NavLink } from "react-router-dom"
 
 const PostList = () => {
-
     const [ posts, setPosts ] = useState([])
 
     useEffect( () => {
         axios.get('http://localhost:3000/api/posts')
         .then( res => setPosts(res.data))
     }, [] )
+    
     return(
         <>
             <MainNav/>
