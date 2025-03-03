@@ -1,6 +1,7 @@
 import MainNav from "../components/MainNav"
 import { useState, useEffect } from "react"
 import axios from "axios"
+import { NavLink } from "react-router-dom"
 
 const PostList = () => {
 
@@ -19,6 +20,7 @@ const PostList = () => {
                         posts.map((elem) => {
                             return(
                                 <div key={elem.id} className="col-4">
+                                    <NavLink to={`/list/${elem.id}`}>
                                     <div className="card">
                                         {/*<img className="card-img-top" src="" alt="" />*/}
                                         <div className="card-body">
@@ -26,6 +28,7 @@ const PostList = () => {
                                             <p className="card-text">{elem.content}</p>
                                         </div>
                                     </div>
+                                    </NavLink>
                                 </div>
                             )
                         })
